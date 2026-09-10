@@ -442,50 +442,15 @@ You must:
 
 1. Modify the code block below so that it contains the output of the command below
     ```
-    $ qwen 'what is .bashrc?'
-**`.bashrc`** is a hidden configuration file used by the **Bash shell** (Bourne Again Shell), which is the default command-line interface for Linux and macOS (up to Catalina).
 
-### Key Details:
-
-1. **Purpose**:  
-   It stores user-specific settings and configurations that are executed every time an **interactive non-login** Bash shell is started. Common uses include:
-   - Defining **environment variables** (e.g., `export PATH`)
-   - Setting **shell options** (e.g., completion behavior)
-   - Creating **aliases** (e.g., `alias ll='ls -la'`)
-   - Customizing prompt styles, history settings, and other shell behaviors
-
-2. **Location**:  
-   - Located in the user’s home directory: `~/.bashrc`
-   - By default, it may not exist on all systems; you may need to create it manually.
-
-3. **When It’s Read**:  
-   - Executed when you open a new terminal window or start an interactive Bash session.
-   - **Not executed** during login shells (those are handled by `.bash_profile`, `.bash_login`, or `.profile`).
-
-4. **Source Chain**:  
-   In typical Bash setups:
-   - `.bash_profile` (or `.profile`) is read for login shells.
-   - It often sources `.bashrc` to ensure non-login settings are also applied.
-   - Example line in `.bash_profile`:
-     ```bash
-     if [ -f ~/.bashrc ]; then
-         . ~/.bashrc
-     fi
-     ```
-
-5. **Hidden File**:  
-   The dot (`.`) prefix makes it a hidden file in Unix-like systems. You need to use `ls -a` or `ls -la` to see it.
-
-### Example Usage:
-Add this to `~/.bashrc` to create a shortcut:
-```bash
-alias ll='ls -lha'
+`.bashrc` is a hidden configuration file in your home directory that runs automatically every time you open a new interactive non-login Bash shell session. It is used to store user-specific settings such as aliases, environment variables, and shell options to customize your command-line experience.
 ```
+
 After saving, run `source ~/.bashrc` or open a new terminal to apply the change.
 
-### Note for macOS (Catalina and Later):
-Starting with **macOS Catalina (10.15)**, the default shell changed from Bash to **Zsh**. In that case, you’d use `.zshrc` instead for Zsh configuration. If you still use Bash, `.bashrc` remains relevant.
-    ```
+
+
+
 
 1. Push your changes to github.
 
