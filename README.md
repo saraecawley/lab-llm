@@ -440,7 +440,7 @@ You must:
 
 1. Fork this repo.
 
-1. Modify the code block below so that it contains the output of the command below
+2. Modify the code block below so that it contains the output of the command below
 ```
 $ qwen 'what is .bashrc?'
 `.bashrc` is a hidden configuration file in your home directory that runs automatically every time you open a new interactive non-login Bash shell session. It is used to store user-specific settings such as aliases, environment variables, and shell options to customize your command-line experience.
@@ -448,13 +448,9 @@ $ qwen 'what is .bashrc?'
 
 After saving, run `source ~/.bashrc` or open a new terminal to apply the change.
 
+3. Push your changes to github.
 
-
-
-
-1. Push your changes to github.
-
-1. Submit a link of the modified repo to canvas.
+4. Submit a link of the modified repo to canvas.
 
     You will only get credit if all of these steps have been completed correctly.
 
