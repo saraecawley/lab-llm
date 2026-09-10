@@ -441,8 +441,8 @@ You must:
 1. Fork this repo.
 
 1. Modify the code block below so that it contains the output of the command below
-    ```
-
+```
+$ qwen 'what is .bashrc?'
 `.bashrc` is a hidden configuration file in your home directory that runs automatically every time you open a new interactive non-login Bash shell session. It is used to store user-specific settings such as aliases, environment variables, and shell options to customize your command-line experience.
 ```
 
